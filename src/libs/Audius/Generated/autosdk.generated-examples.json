@@ -1,0 +1,15 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Gets User IDs from any Ethereum wallet address or Solana account address associated with their Audius account.",
+      "Slug": "get-user-ids-by-addresses",
+      "Description": "Gets User IDs from any Ethereum wallet address or Solana account address associated with their Audius account.",
+      "Language": "csharp",
+      "Code": "using var client = new AudiusClient();\n\nvar response = await client.Users.GetUserIDsByAddressesAsync(\n    address: global::System.Text.Json.JsonSerializer.Deserialize\u003Cglobal::System.Collections.Generic.IList\u003Cstring\u003E\u003E(\n    @\u0022[\n  \u0022\u00220x1234567890abcdef1234567890abcdef12345678\u0022\u0022,\n  \u0022\u0022E2LCbKdo2L3ikt1gK6pwp1pDLuhAfHBNf6fEQXpAqrf9\u0022\u0022\n]\u0022)!\n);",
+      "Format": "sdk",
+      "OperationId": "Get User IDs by Addresses",
+      "Setup": "This example assumes \u0060using Audius;\u0060 is in scope."
+    }
+  ]
+}

@@ -1,0 +1,649 @@
+
+#nullable enable
+
+namespace Audius
+{
+    public partial class SearchClient
+    {
+
+
+        private static readonly global::Audius.EndPointSecurityRequirement s_SearchTagsSecurityRequirement0 =
+            new global::Audius.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Audius.EndPointAuthorizationRequirement[]
+                {
+                },
+            };
+
+        private static readonly global::Audius.EndPointSecurityRequirement s_SearchTagsSecurityRequirement1 =
+            new global::Audius.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Audius.EndPointAuthorizationRequirement[]
+                {                    new global::Audius.EndPointAuthorizationRequirement
+                    {
+                        Type = "OAuth2",
+                        SchemeId = "OAuth2",
+                        Location = "Header",
+                        Name = "",
+                        FriendlyName = "OAuth2",
+                    },
+                },
+            };
+        private static readonly global::Audius.EndPointSecurityRequirement[] s_SearchTagsSecurityRequirements =
+            new global::Audius.EndPointSecurityRequirement[]
+            {                s_SearchTagsSecurityRequirement0,
+                s_SearchTagsSecurityRequirement1,
+            };
+        partial void PrepareSearchTagsArguments(
+            global::System.Net.Http.HttpClient httpClient,
+            ref int? offset,
+            ref int? limit,
+            ref string? userId,
+            ref string? query,
+            ref global::Audius.SearchTagsKind? kind,
+            ref bool? includePurchaseable,
+            global::System.Collections.Generic.IList<string>? genre,
+            global::System.Collections.Generic.IList<string>? mood,
+            ref bool? isVerified,
+            ref bool? hasDownloads,
+            ref bool? isPurchaseable,
+            global::System.Collections.Generic.IList<string>? key,
+            ref double? bpmMin,
+            ref double? bpmMax,
+            ref global::Audius.SearchTagsSortMethod? sortMethod);
+        partial void PrepareSearchTagsRequest(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            int? offset,
+            int? limit,
+            string? userId,
+            string? query,
+            global::Audius.SearchTagsKind? kind,
+            bool? includePurchaseable,
+            global::System.Collections.Generic.IList<string>? genre,
+            global::System.Collections.Generic.IList<string>? mood,
+            bool? isVerified,
+            bool? hasDownloads,
+            bool? isPurchaseable,
+            global::System.Collections.Generic.IList<string>? key,
+            double? bpmMin,
+            double? bpmMax,
+            global::Audius.SearchTagsSortMethod? sortMethod);
+        partial void ProcessSearchTagsResponse(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage);
+
+        partial void ProcessSearchTagsResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
+        /// <summary>
+        /// Get Users/Tracks/Playlists/Albums that best match the provided tag
+        /// </summary>
+        /// <param name="offset"></param>
+        /// <param name="limit"></param>
+        /// <param name="userId"></param>
+        /// <param name="query"></param>
+        /// <param name="kind">
+        /// Default Value: all
+        /// </param>
+        /// <param name="includePurchaseable"></param>
+        /// <param name="genre"></param>
+        /// <param name="mood"></param>
+        /// <param name="isVerified"></param>
+        /// <param name="hasDownloads"></param>
+        /// <param name="isPurchaseable"></param>
+        /// <param name="key"></param>
+        /// <param name="bpmMin"></param>
+        /// <param name="bpmMax"></param>
+        /// <param name="sortMethod"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Audius.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Audius.SearchResponse> SearchTagsAsync(
+            int? offset = default,
+            int? limit = default,
+            string? userId = default,
+            string? query = default,
+            global::Audius.SearchTagsKind? kind = default,
+            bool? includePurchaseable = default,
+            global::System.Collections.Generic.IList<string>? genre = default,
+            global::System.Collections.Generic.IList<string>? mood = default,
+            bool? isVerified = default,
+            bool? hasDownloads = default,
+            bool? isPurchaseable = default,
+            global::System.Collections.Generic.IList<string>? key = default,
+            double? bpmMin = default,
+            double? bpmMax = default,
+            global::Audius.SearchTagsSortMethod? sortMethod = default,
+            global::Audius.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __response = await SearchTagsAsResponseAsync(
+                offset: offset,
+                limit: limit,
+                userId: userId,
+                query: query,
+                kind: kind,
+                includePurchaseable: includePurchaseable,
+                genre: genre,
+                mood: mood,
+                isVerified: isVerified,
+                hasDownloads: hasDownloads,
+                isPurchaseable: isPurchaseable,
+                key: key,
+                bpmMin: bpmMin,
+                bpmMax: bpmMax,
+                sortMethod: sortMethod,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Get Users/Tracks/Playlists/Albums that best match the provided tag
+        /// </summary>
+        /// <param name="offset"></param>
+        /// <param name="limit"></param>
+        /// <param name="userId"></param>
+        /// <param name="query"></param>
+        /// <param name="kind">
+        /// Default Value: all
+        /// </param>
+        /// <param name="includePurchaseable"></param>
+        /// <param name="genre"></param>
+        /// <param name="mood"></param>
+        /// <param name="isVerified"></param>
+        /// <param name="hasDownloads"></param>
+        /// <param name="isPurchaseable"></param>
+        /// <param name="key"></param>
+        /// <param name="bpmMin"></param>
+        /// <param name="bpmMax"></param>
+        /// <param name="sortMethod"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Audius.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Audius.AutoSDKHttpResponse<global::Audius.SearchResponse>> SearchTagsAsResponseAsync(
+            int? offset = default,
+            int? limit = default,
+            string? userId = default,
+            string? query = default,
+            global::Audius.SearchTagsKind? kind = default,
+            bool? includePurchaseable = default,
+            global::System.Collections.Generic.IList<string>? genre = default,
+            global::System.Collections.Generic.IList<string>? mood = default,
+            bool? isVerified = default,
+            bool? hasDownloads = default,
+            bool? isPurchaseable = default,
+            global::System.Collections.Generic.IList<string>? key = default,
+            double? bpmMin = default,
+            double? bpmMax = default,
+            global::Audius.SearchTagsSortMethod? sortMethod = default,
+            global::Audius.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            PrepareArguments(
+                client: HttpClient);
+            PrepareSearchTagsArguments(
+                httpClient: HttpClient,
+                offset: ref offset,
+                limit: ref limit,
+                userId: ref userId,
+                query: ref query,
+                kind: ref kind,
+                includePurchaseable: ref includePurchaseable,
+                genre: genre,
+                mood: mood,
+                isVerified: ref isVerified,
+                hasDownloads: ref hasDownloads,
+                isPurchaseable: ref isPurchaseable,
+                key: key,
+                bpmMin: ref bpmMin,
+                bpmMax: ref bpmMax,
+                sortMethod: ref sortMethod);
+
+
+            var __authorizations = global::Audius.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SearchTagsSecurityRequirements,
+                operationName: "SearchTagsAsync");
+
+            using var __timeoutCancellationTokenSource = global::Audius.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
+                clientOptions: Options,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken);
+            var __effectiveCancellationToken = __timeoutCancellationTokenSource?.Token ?? cancellationToken;
+            var __effectiveReadResponseAsString = global::Audius.AutoSDKRequestOptionsSupport.GetReadResponseAsString(
+                clientOptions: Options,
+                requestOptions: requestOptions,
+                fallbackValue: ReadResponseAsString);
+            var __maxAttempts = global::Audius.AutoSDKRequestOptionsSupport.GetMaxAttempts(
+                clientOptions: Options,
+                requestOptions: requestOptions,
+                supportsRetry: true);
+
+            global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
+            {
+
+                            var __pathBuilder = new global::Audius.PathBuilder(
+                                path: "/search/tags",
+                                baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("offset", offset?.ToString())
+                                .AddOptionalParameter("limit", limit?.ToString())
+                                .AddOptionalParameter("user_id", userId)
+                                .AddOptionalParameter("query", query)
+                                .AddOptionalParameter("kind", kind?.ToValueString())
+                                .AddOptionalParameter("includePurchaseable", includePurchaseable?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("genre", genre, delimiter: ",", explode: true)
+                                .AddOptionalParameter("mood", mood, delimiter: ",", explode: true)
+                                .AddOptionalParameter("is_verified", isVerified?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("has_downloads", hasDownloads?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("is_purchaseable", isPurchaseable?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("key", key, delimiter: ",", explode: true)
+                                .AddOptionalParameter("bpm_min", bpmMin?.ToString())
+                                .AddOptionalParameter("bpm_max", bpmMax?.ToString())
+                                .AddOptionalParameter("sort_method", sortMethod?.ToValueString())
+                                ;
+                            var __path = __pathBuilder.ToString();
+                __path = global::Audius.AutoSDKRequestOptionsSupport.AppendQueryParameters(
+                    path: __path,
+                    clientParameters: Options.QueryParameters,
+                    requestParameters: requestOptions?.QueryParameters);
+                var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
+                    method: global::System.Net.Http.HttpMethod.Get,
+                    requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
+#if NET6_0_OR_GREATER
+                __httpRequest.Version = global::System.Net.HttpVersion.Version11;
+                __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
+#endif
+
+            foreach (var __authorization in __authorizations)
+            {
+                if (__authorization.Type == "Http" ||
+                    __authorization.Type == "OAuth2" ||
+                    __authorization.Type == "OpenIdConnect")
+                {
+                    __httpRequest.Headers.Authorization = new global::System.Net.Http.Headers.AuthenticationHeaderValue(
+                        scheme: __authorization.Name,
+                        parameter: __authorization.Value);
+                }
+                else if (__authorization.Type == "ApiKey" &&
+                         __authorization.Location == "Header")
+                {
+                    __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
+                }
+            }
+                global::Audius.AutoSDKRequestOptionsSupport.ApplyHeaders(
+                    request: __httpRequest,
+                    clientHeaders: Options.Headers,
+                    requestHeaders: requestOptions?.Headers);
+
+                PrepareRequest(
+                    client: HttpClient,
+                    request: __httpRequest);
+                PrepareSearchTagsRequest(
+                    httpClient: HttpClient,
+                    httpRequestMessage: __httpRequest,
+                    offset: offset,
+                    limit: limit,
+                    userId: userId,
+                    query: query,
+                    kind: kind,
+                    includePurchaseable: includePurchaseable,
+                    genre: genre,
+                    mood: mood,
+                    isVerified: isVerified,
+                    hasDownloads: hasDownloads,
+                    isPurchaseable: isPurchaseable,
+                    key: key,
+                    bpmMin: bpmMin,
+                    bpmMax: bpmMax,
+                    sortMethod: sortMethod);
+
+                global::Audius.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
+                return __httpRequest;
+            }
+
+            global::System.Net.Http.HttpRequestMessage? __httpRequest = null;
+            global::System.Net.Http.HttpResponseMessage? __response = null;
+            var __attemptNumber = 0;
+            try
+            {
+                for (var __attempt = 1; __attempt <= __maxAttempts; __attempt++)
+                {
+                    __attemptNumber = __attempt;
+                    __httpRequest = __CreateHttpRequest();
+                    await global::Audius.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
+                            clientOptions: Options,
+                            context: global::Audius.AutoSDKRequestOptionsSupport.CreateHookContext(
+                                operationId: "SearchTags",
+                                methodName: "SearchTagsAsync",
+                                pathTemplate: "\"/search/tags\"",
+                                httpMethod: "GET",
+                                baseUri: BaseUri,
+                                request: __httpRequest!,
+                                response: null,
+                                exception: null,
+                                clientOptions: Options,
+                                requestOptions: requestOptions,
+                                attempt: __attempt,
+                                maxAttempts: __maxAttempts,
+                                willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
+                                cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
+                    try
+                    {
+                        __response = await global::Audius.AudiusClient.AutoSDKOAuth2Helpers.SendAsync(
+                httpClient: HttpClient,
+                request: __httpRequest,
+                completionOption: global::System.Net.Http.HttpCompletionOption.ResponseContentRead,
+                authorizations: __authorizations,
+                oAuth2Coordinator: AutoSDKOAuth2State,
+                cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
+                    }
+                    catch (global::System.Net.Http.HttpRequestException __exception)
+                    {
+                        var __retryDelay = global::Audius.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
+                        var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
+                        await global::Audius.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
+                            clientOptions: Options,
+                            context: global::Audius.AutoSDKRequestOptionsSupport.CreateHookContext(
+                                operationId: "SearchTags",
+                                methodName: "SearchTagsAsync",
+                                pathTemplate: "\"/search/tags\"",
+                                httpMethod: "GET",
+                                baseUri: BaseUri,
+                                request: __httpRequest!,
+                                response: null,
+                                exception: __exception,
+                                clientOptions: Options,
+                                requestOptions: requestOptions,
+                                attempt: __attempt,
+                                maxAttempts: __maxAttempts,
+                                willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
+                                cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
+                        if (!__willRetry)
+                        {
+                            throw;
+                        }
+
+                        __httpRequest.Dispose();
+                        __httpRequest = null;
+                        await global::Audius.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
+                            retryDelay: __retryDelay,
+                            cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
+                        continue;
+                    }
+
+                    if (__response != null &&
+                        __attempt < __maxAttempts &&
+                        global::Audius.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
+                    {
+                        var __retryDelay = global::Audius.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
+                        await global::Audius.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
+                            clientOptions: Options,
+                            context: global::Audius.AutoSDKRequestOptionsSupport.CreateHookContext(
+                                operationId: "SearchTags",
+                                methodName: "SearchTagsAsync",
+                                pathTemplate: "\"/search/tags\"",
+                                httpMethod: "GET",
+                                baseUri: BaseUri,
+                                request: __httpRequest!,
+                                response: __response,
+                                exception: null,
+                                clientOptions: Options,
+                                requestOptions: requestOptions,
+                                attempt: __attempt,
+                                maxAttempts: __maxAttempts,
+                                willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
+                                cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
+                        __response.Dispose();
+                        __response = null;
+                        __httpRequest.Dispose();
+                        __httpRequest = null;
+                        await global::Audius.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
+                            retryDelay: __retryDelay,
+                            cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
+                        continue;
+                    }
+
+                    break;
+                }
+
+                if (__response == null)
+                {
+                    throw new global::System.InvalidOperationException("No response received.");
+                }
+
+                using (__response)
+                {
+
+                ProcessResponse(
+                    client: HttpClient,
+                    response: __response);
+                ProcessSearchTagsResponse(
+                    httpClient: HttpClient,
+                    httpResponseMessage: __response);
+                if (__response.IsSuccessStatusCode)
+                {
+                    await global::Audius.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
+                            clientOptions: Options,
+                            context: global::Audius.AutoSDKRequestOptionsSupport.CreateHookContext(
+                                operationId: "SearchTags",
+                                methodName: "SearchTagsAsync",
+                                pathTemplate: "\"/search/tags\"",
+                                httpMethod: "GET",
+                                baseUri: BaseUri,
+                                request: __httpRequest!,
+                                response: __response,
+                                exception: null,
+                                clientOptions: Options,
+                                requestOptions: requestOptions,
+                                attempt: __attemptNumber,
+                                maxAttempts: __maxAttempts,
+                                willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
+                                cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
+                }
+                else
+                {
+                    await global::Audius.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
+                            clientOptions: Options,
+                            context: global::Audius.AutoSDKRequestOptionsSupport.CreateHookContext(
+                                operationId: "SearchTags",
+                                methodName: "SearchTagsAsync",
+                                pathTemplate: "\"/search/tags\"",
+                                httpMethod: "GET",
+                                baseUri: BaseUri,
+                                request: __httpRequest!,
+                                response: __response,
+                                exception: null,
+                                clientOptions: Options,
+                                requestOptions: requestOptions,
+                                attempt: __attemptNumber,
+                                maxAttempts: __maxAttempts,
+                                willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
+                                cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
+                }
+                            //
+                            if ((int)__response.StatusCode == 400)
+                            {
+                                string? __content_400 = null;
+                                global::System.Exception? __exception_400 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_400 = __ex;
+                                }
+
+
+                                throw global::Audius.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_400,
+                                    responseBody: __content_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::Audius.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+
+                            if (__effectiveReadResponseAsString)
+                            {
+                                var __content = await __response.Content.ReadAsStringAsync(
+                #if NET5_0_OR_GREATER
+                                    __effectiveCancellationToken
+                #endif
+                                ).ConfigureAwait(false);
+
+                                ProcessResponseContent(
+                                    client: HttpClient,
+                                    response: __response,
+                                    content: ref __content);
+                                ProcessSearchTagsResponseContent(
+                                    httpClient: HttpClient,
+                                    httpResponseMessage: __response,
+                                    content: ref __content);
+
+                                try
+                                {
+                                    __response.EnsureSuccessStatusCode();
+
+                                    var __value = global::Audius.SearchResponse.FromJson(__content, JsonSerializerContext) ??
+                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Audius.AutoSDKHttpResponse<global::Audius.SearchResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Audius.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    throw global::Audius.ApiException.Create(
+                                        statusCode: __response.StatusCode,
+                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        innerException: __ex,
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                            __response.Headers,
+                                            h => h.Key,
+                                            h => h.Value));
+                                }
+                            }
+                            else
+                            {
+                                try
+                                {
+                                    __response.EnsureSuccessStatusCode();
+                                    using var __content = await __response.Content.ReadAsStreamAsync(
+                #if NET5_0_OR_GREATER
+                                        __effectiveCancellationToken
+                #endif
+                                    ).ConfigureAwait(false);
+
+                                    var __value = await global::Audius.SearchResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Audius.AutoSDKHttpResponse<global::Audius.SearchResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Audius.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    string? __content = null;
+                                    try
+                                    {
+                                        __content = await __response.Content.ReadAsStringAsync(
+                #if NET5_0_OR_GREATER
+                                            __effectiveCancellationToken
+                #endif
+                                        ).ConfigureAwait(false);
+                                    }
+                                    catch (global::System.Exception)
+                                    {
+                                    }
+
+                                    throw global::Audius.ApiException.Create(
+                                        statusCode: __response.StatusCode,
+                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        innerException: __ex,
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                            __response.Headers,
+                                            h => h.Key,
+                                            h => h.Value));
+                                }
+                            }
+
+                }
+            }
+            finally
+            {
+                __httpRequest?.Dispose();
+            }
+        }
+    }
+}

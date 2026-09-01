@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- AutoSDK's OAuth scope enum values are generated without per-value XML comments. -->
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <PackageId>tryAGI.Audius</PackageId>
+    <Description>Modern generated C# SDK for the Audius API, including catalog search, canonical metadata, playlists, users, and full-track streaming.</Description>
+    <PackageTags>audius;music;audio;streaming;search;api;client;sdk;dotnet;autosdk;openapi</PackageTags>
+  </PropertyGroup>
+
+</Project>
