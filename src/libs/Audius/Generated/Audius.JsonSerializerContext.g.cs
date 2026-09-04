@@ -962,13 +962,8 @@ namespace Audius
             return Resolver.GetTypeInfo(type, Options);
         }
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+         static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
             options.Converters.Add(new global::Audius.JsonConverters.AccessGateJsonConverter());
             options.Converters.Add(new global::Audius.JsonConverters.TrackActivityJsonConverter());
             options.Converters.Add(new global::Audius.JsonConverters.CollectionActivityWithoutTracksJsonConverter());
@@ -980,8 +975,17 @@ namespace Audius
             options.Converters.Add(new global::Audius.JsonConverters.OneOfJsonConverter<global::Audius.PlaylistLibraryFolder, global::Audius.PlaylistLibraryPlaylistIdentifier, global::Audius.PlaylistLibraryExplorePlaylistIdentifier>());
             options.Converters.Add(new global::Audius.JsonConverters.OneOfJsonConverter<global::Audius.PlaylistLibraryFolder, global::Audius.PlaylistLibraryPlaylistIdentifier, global::Audius.PlaylistLibraryExplorePlaylistIdentifier>());
             options.Converters.Add(new global::Audius.JsonConverters.UnixTimestampJsonConverter());
-
             options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            AddConverters(options);
 
             return options;
         }
