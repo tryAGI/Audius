@@ -3,6 +3,11 @@
 
 namespace Audius
 {
+    using OAuth2DeviceAuthorizationResponse = global::Audius.AudiusClient.OAuth2DeviceAuthorizationResponse;
+    using OAuth2Token = global::Audius.AudiusClient.OAuth2Token;
+    using IOAuth2TokenStore = global::Audius.AudiusClient.IOAuth2TokenStore;
+    using AutoSDKOAuth2Helpers = global::Audius.AudiusClient.AutoSDKOAuth2Helpers;
+
     public sealed partial class AudiusClient
     {
         /// <summary>
@@ -479,7 +484,13 @@ namespace Audius
         /// </summary>
         public enum OAuth2Scope
         {
-            Read,            Write,
+            /// <summary>
+            /// OAuth2 scope <c>read</c>.
+            /// </summary>
+            Read,            /// <summary>
+            /// OAuth2 scope <c>write</c>.
+            /// </summary>
+            Write,
         }
         /// <summary>
         /// Gets the OAuth2 metadata URL declared by the security scheme, if any.
