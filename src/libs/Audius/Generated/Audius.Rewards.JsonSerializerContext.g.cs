@@ -11,6 +11,7 @@ namespace Audius
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata,
         Converters = new global::System.Type[]
         {
         })]
@@ -21,15 +22,15 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsRequestBody), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateRewardCodeRequest), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateRewardCodeResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.ClaimRewardsResponseDataItem>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsResponseDataItem), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsRequestBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateRewardCodeRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateRewardCodeResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.ClaimRewardsResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimRewardsResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.ClaimRewardsResponseDataItem>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.ClaimRewardsResponseDataItem>))]
     internal sealed partial class RewardsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
