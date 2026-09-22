@@ -11,6 +11,7 @@ namespace Audius
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata,
         Converters = new global::System.Type[]
         {
         })]
@@ -22,16 +23,16 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.UserCoinAccount>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoinAccount), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoinsResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.UserCoin>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoin), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.UserCoinAccount>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoinAccount))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoinsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.UserCoin>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserCoin))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.UserCoinAccount>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.UserCoin>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.UserCoinAccount>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.UserCoin>))]
     internal sealed partial class WalletSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

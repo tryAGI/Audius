@@ -11,6 +11,7 @@ namespace Audius
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata,
         Converters = new global::System.Type[]
         {
         })]
@@ -21,19 +22,19 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimedPrizesResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.ClaimedPrize>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimedPrize), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizeClaimRequestBody), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizeClaimResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimedPrizesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.ClaimedPrize>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimedPrize))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizeClaimRequestBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizeClaimResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizesResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.PrizePublic>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizePublic), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.PrizePublic>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PrizePublic))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.ClaimedPrize>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.PrizePublic>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.ClaimedPrize>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.PrizePublic>))]
     internal sealed partial class PrizesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

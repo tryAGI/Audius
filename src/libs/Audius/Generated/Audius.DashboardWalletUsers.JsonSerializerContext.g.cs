@@ -11,6 +11,7 @@ namespace Audius
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata,
         Converters = new global::System.Type[]
         {
         })]
@@ -22,20 +23,20 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.User), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.User))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.DashboardWalletUsersResponse), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.DashboardWalletUser>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.DashboardWalletUser), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserArtistCoinBadge), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CoverPhoto), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ProfilePicture), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PlaylistLibrary), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.DashboardWalletUsersResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.DashboardWalletUser>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.DashboardWalletUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.UserArtistCoinBadge))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CoverPhoto))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ProfilePicture))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.PlaylistLibrary))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.DashboardWalletUser>), GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata)]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Audius.DashboardWalletUser>))]
     internal sealed partial class DashboardWalletUsersSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
