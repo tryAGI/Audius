@@ -114,8 +114,8 @@ namespace Audius
                 PrepareGetUserCoinRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id!,
-                    mint: mint!);
+                    id: id,
+                    mint: mint);
 
                 return __httpRequest;
             }
@@ -137,7 +137,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/coins/{mint}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -171,7 +171,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/coins/{mint}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -212,7 +212,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/coins/{mint}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -260,7 +260,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/coins/{mint}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -282,7 +282,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/coins/{mint}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

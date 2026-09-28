@@ -204,25 +204,25 @@ namespace Audius.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TipGate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TipGate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TipGate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tip!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTip(), typeInfo);
             }
             else if (value.IsFollow)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FollowGate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FollowGate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FollowGate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Follow!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFollow(), typeInfo);
             }
             else if (value.IsPurchase)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.PurchaseGate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.PurchaseGate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.PurchaseGate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Purchase!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPurchase(), typeInfo);
             }
             else if (value.IsToken)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TokenGate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TokenGate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TokenGate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Token!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickToken(), typeInfo);
             }
         }
     }

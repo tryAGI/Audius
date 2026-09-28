@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FollowNotification PickFollow() => IsFollow
-            ? Follow!
+        public global::Audius.FollowNotification PickFollow() => Follow is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Follow' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SaveNotification PickSave() => IsSave
-            ? Save!
+        public global::Audius.SaveNotification PickSave() => Save is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Save' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.RepostNotification PickRepost() => IsRepost
-            ? Repost!
+        public global::Audius.RepostNotification PickRepost() => Repost is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Repost' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.RepostOfRepostNotification PickRepostOf() => IsRepostOf
-            ? RepostOf!
+        public global::Audius.RepostOfRepostNotification PickRepostOf() => RepostOf is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RepostOf' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SaveOfRepostNotification PickSaveOfRepost() => IsSaveOfRepost
-            ? SaveOfRepost!
+        public global::Audius.SaveOfRepostNotification PickSaveOfRepost() => SaveOfRepost is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SaveOfRepost' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TastemakerNotification PickTastemaker() => IsTastemaker
-            ? Tastemaker!
+        public global::Audius.TastemakerNotification PickTastemaker() => Tastemaker is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Tastemaker' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.RemixNotification PickRemix() => IsRemix
-            ? Remix!
+        public global::Audius.RemixNotification PickRemix() => Remix is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Remix' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CosignNotification PickCosign() => IsCosign
-            ? Cosign!
+        public global::Audius.CosignNotification PickCosign() => Cosign is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Cosign' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CreateNotification PickCreate() => IsCreate
-            ? Create!
+        public global::Audius.CreateNotification PickCreate() => Create is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Create' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SendTipNotification PickSendTip() => IsSendTip
-            ? SendTip!
+        public global::Audius.SendTipNotification PickSendTip() => SendTip is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SendTip' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ReceiveTipNotification PickReceiveTip() => IsReceiveTip
-            ? ReceiveTip!
+        public global::Audius.ReceiveTipNotification PickReceiveTip() => ReceiveTip is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReceiveTip' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SupporterDethronedNotification PickSupporterDethroned() => IsSupporterDethroned
-            ? SupporterDethroned!
+        public global::Audius.SupporterDethronedNotification PickSupporterDethroned() => SupporterDethroned is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SupporterDethroned' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SupporterRankUpNotification PickSupporterRankUp1() => IsSupporterRankUp1
-            ? SupporterRankUp1!
+        public global::Audius.SupporterRankUpNotification PickSupporterRankUp1() => SupporterRankUp1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SupporterRankUp1' but the value was {ToString()}.");
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.SupporterRankUpNotification PickSupporterRankUp2() => IsSupporterRankUp2
-            ? SupporterRankUp2!
+        public global::Audius.SupporterRankUpNotification PickSupporterRankUp2() => SupporterRankUp2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SupporterRankUp2' but the value was {ToString()}.");
 
         /// <summary>
@@ -560,8 +560,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ChallengeRewardNotification PickChallengeReward() => IsChallengeReward
-            ? ChallengeReward!
+        public global::Audius.ChallengeRewardNotification PickChallengeReward() => ChallengeReward is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChallengeReward' but the value was {ToString()}.");
 
         /// <summary>
@@ -597,8 +597,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ClaimableRewardNotification PickClaimableReward() => IsClaimableReward
-            ? ClaimableReward!
+        public global::Audius.ClaimableRewardNotification PickClaimableReward() => ClaimableReward is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ClaimableReward' but the value was {ToString()}.");
 
         /// <summary>
@@ -634,8 +634,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ReactionNotification PickReaction() => IsReaction
-            ? Reaction!
+        public global::Audius.ReactionNotification PickReaction() => Reaction is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Reaction' but the value was {ToString()}.");
 
         /// <summary>
@@ -671,8 +671,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.MilestoneNotification PickMilestone() => IsMilestone
-            ? Milestone!
+        public global::Audius.MilestoneNotification PickMilestone() => Milestone is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Milestone' but the value was {ToString()}.");
 
         /// <summary>
@@ -708,8 +708,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TierChangeNotification PickTierChange() => IsTierChange
-            ? TierChange!
+        public global::Audius.TierChangeNotification PickTierChange() => TierChange is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TierChange' but the value was {ToString()}.");
 
         /// <summary>
@@ -745,8 +745,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrackAddedToPlaylistNotification PickTrackAddedToPlaylist() => IsTrackAddedToPlaylist
-            ? TrackAddedToPlaylist!
+        public global::Audius.TrackAddedToPlaylistNotification PickTrackAddedToPlaylist() => TrackAddedToPlaylist is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TrackAddedToPlaylist' but the value was {ToString()}.");
 
         /// <summary>
@@ -782,8 +782,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrackAddedToPurchasedAlbumNotification PickTrackAddedToPurchasedAlbum() => IsTrackAddedToPurchasedAlbum
-            ? TrackAddedToPurchasedAlbum!
+        public global::Audius.TrackAddedToPurchasedAlbumNotification PickTrackAddedToPurchasedAlbum() => TrackAddedToPurchasedAlbum is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TrackAddedToPurchasedAlbum' but the value was {ToString()}.");
 
         /// <summary>
@@ -819,8 +819,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.UsdcPurchaseSellerNotification PickUsdcPurchaseSeller() => IsUsdcPurchaseSeller
-            ? UsdcPurchaseSeller!
+        public global::Audius.UsdcPurchaseSellerNotification PickUsdcPurchaseSeller() => UsdcPurchaseSeller is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UsdcPurchaseSeller' but the value was {ToString()}.");
 
         /// <summary>
@@ -856,8 +856,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.UsdcPurchaseBuyerNotification PickUsdcPurchaseBuyer() => IsUsdcPurchaseBuyer
-            ? UsdcPurchaseBuyer!
+        public global::Audius.UsdcPurchaseBuyerNotification PickUsdcPurchaseBuyer() => UsdcPurchaseBuyer is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UsdcPurchaseBuyer' but the value was {ToString()}.");
 
         /// <summary>
@@ -893,8 +893,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.RequestManagerNotification PickRequestManager() => IsRequestManager
-            ? RequestManager!
+        public global::Audius.RequestManagerNotification PickRequestManager() => RequestManager is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RequestManager' but the value was {ToString()}.");
 
         /// <summary>
@@ -930,8 +930,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ApproveManagerRequestNotification PickApproveManagerRequest() => IsApproveManagerRequest
-            ? ApproveManagerRequest!
+        public global::Audius.ApproveManagerRequestNotification PickApproveManagerRequest() => ApproveManagerRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApproveManagerRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -967,8 +967,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrendingNotification PickTrending() => IsTrending
-            ? Trending!
+        public global::Audius.TrendingNotification PickTrending() => Trending is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Trending' but the value was {ToString()}.");
 
         /// <summary>
@@ -1004,8 +1004,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrendingPlaylistNotification PickTrendingPlaylist() => IsTrendingPlaylist
-            ? TrendingPlaylist!
+        public global::Audius.TrendingPlaylistNotification PickTrendingPlaylist() => TrendingPlaylist is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TrendingPlaylist' but the value was {ToString()}.");
 
         /// <summary>
@@ -1041,8 +1041,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrendingUndergroundNotification PickTrendingUnderground() => IsTrendingUnderground
-            ? TrendingUnderground!
+        public global::Audius.TrendingUndergroundNotification PickTrendingUnderground() => TrendingUnderground is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TrendingUnderground' but the value was {ToString()}.");
 
         /// <summary>
@@ -1078,8 +1078,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.AnnouncementNotification PickAnnouncement() => IsAnnouncement
-            ? Announcement!
+        public global::Audius.AnnouncementNotification PickAnnouncement() => Announcement is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Announcement' but the value was {ToString()}.");
 
         /// <summary>
@@ -1115,8 +1115,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CommentNotification PickComment() => IsComment
-            ? Comment!
+        public global::Audius.CommentNotification PickComment() => Comment is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Comment' but the value was {ToString()}.");
 
         /// <summary>
@@ -1152,8 +1152,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CommentThreadNotification PickCommentThread() => IsCommentThread
-            ? CommentThread!
+        public global::Audius.CommentThreadNotification PickCommentThread() => CommentThread is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CommentThread' but the value was {ToString()}.");
 
         /// <summary>
@@ -1189,8 +1189,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CommentMentionNotification PickCommentMention() => IsCommentMention
-            ? CommentMention!
+        public global::Audius.CommentMentionNotification PickCommentMention() => CommentMention is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CommentMention' but the value was {ToString()}.");
 
         /// <summary>
@@ -1226,8 +1226,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CommentReactionNotification PickCommentReaction() => IsCommentReaction
-            ? CommentReaction!
+        public global::Audius.CommentReactionNotification PickCommentReaction() => CommentReaction is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CommentReaction' but the value was {ToString()}.");
 
         /// <summary>
@@ -1263,8 +1263,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ListenStreakReminderNotification PickListenStreakReminder() => IsListenStreakReminder
-            ? ListenStreakReminder!
+        public global::Audius.ListenStreakReminderNotification PickListenStreakReminder() => ListenStreakReminder is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ListenStreakReminder' but the value was {ToString()}.");
 
         /// <summary>
@@ -1300,8 +1300,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanRemixContestStartedNotification PickFanRemixContestStarted() => IsFanRemixContestStarted
-            ? FanRemixContestStarted!
+        public global::Audius.FanRemixContestStartedNotification PickFanRemixContestStarted() => FanRemixContestStarted is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanRemixContestStarted' but the value was {ToString()}.");
 
         /// <summary>
@@ -1337,8 +1337,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanRemixContestEndedNotification PickFanRemixContestEnded() => IsFanRemixContestEnded
-            ? FanRemixContestEnded!
+        public global::Audius.FanRemixContestEndedNotification PickFanRemixContestEnded() => FanRemixContestEnded is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanRemixContestEnded' but the value was {ToString()}.");
 
         /// <summary>
@@ -1374,8 +1374,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanRemixContestEndingSoonNotification PickFanRemixContestEndingSoon() => IsFanRemixContestEndingSoon
-            ? FanRemixContestEndingSoon!
+        public global::Audius.FanRemixContestEndingSoonNotification PickFanRemixContestEndingSoon() => FanRemixContestEndingSoon is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanRemixContestEndingSoon' but the value was {ToString()}.");
 
         /// <summary>
@@ -1411,8 +1411,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ArtistRemixContestEndedNotification PickArtistRemixContestEnded() => IsArtistRemixContestEnded
-            ? ArtistRemixContestEnded!
+        public global::Audius.ArtistRemixContestEndedNotification PickArtistRemixContestEnded() => ArtistRemixContestEnded is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArtistRemixContestEnded' but the value was {ToString()}.");
 
         /// <summary>
@@ -1448,8 +1448,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ArtistRemixContestEndingSoonNotification PickArtistRemixContestEndingSoon() => IsArtistRemixContestEndingSoon
-            ? ArtistRemixContestEndingSoon!
+        public global::Audius.ArtistRemixContestEndingSoonNotification PickArtistRemixContestEndingSoon() => ArtistRemixContestEndingSoon is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArtistRemixContestEndingSoon' but the value was {ToString()}.");
 
         /// <summary>
@@ -1485,8 +1485,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.ArtistRemixContestSubmissionsNotification PickArtistRemixContestSubmissions() => IsArtistRemixContestSubmissions
-            ? ArtistRemixContestSubmissions!
+        public global::Audius.ArtistRemixContestSubmissionsNotification PickArtistRemixContestSubmissions() => ArtistRemixContestSubmissions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArtistRemixContestSubmissions' but the value was {ToString()}.");
 
         /// <summary>
@@ -1522,8 +1522,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanRemixContestWinnersSelectedNotification PickFanRemixContestWinnersSelected() => IsFanRemixContestWinnersSelected
-            ? FanRemixContestWinnersSelected!
+        public global::Audius.FanRemixContestWinnersSelectedNotification PickFanRemixContestWinnersSelected() => FanRemixContestWinnersSelected is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanRemixContestWinnersSelected' but the value was {ToString()}.");
 
         /// <summary>
@@ -1559,8 +1559,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.RemixContestUpdateNotification PickRemixContestUpdate() => IsRemixContestUpdate
-            ? RemixContestUpdate!
+        public global::Audius.RemixContestUpdateNotification PickRemixContestUpdate() => RemixContestUpdate is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RemixContestUpdate' but the value was {ToString()}.");
 
         /// <summary>
@@ -1596,8 +1596,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanRemixContestSubmissionNotification PickFanRemixContestSubmission() => IsFanRemixContestSubmission
-            ? FanRemixContestSubmission!
+        public global::Audius.FanRemixContestSubmissionNotification PickFanRemixContestSubmission() => FanRemixContestSubmission is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanRemixContestSubmission' but the value was {ToString()}.");
 
         /// <summary>
@@ -1633,8 +1633,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FanClubTextPostNotification PickFanClubTextPost() => IsFanClubTextPost
-            ? FanClubTextPost!
+        public global::Audius.FanClubTextPostNotification PickFanClubTextPost() => FanClubTextPost is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FanClubTextPost' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -2884,181 +2884,181 @@ namespace Audius
                 Validate();
             }
 
-            if (IsFollow && follow != null)
+            if (Follow is { } __value0 && follow != null)
             {
-                return follow(Follow!);
+                return follow(__value0);
             }
-            else if (IsSave && save != null)
+            else if (Save is { } __value1 && save != null)
             {
-                return save(Save!);
+                return save(__value1);
             }
-            else if (IsRepost && repost != null)
+            else if (Repost is { } __value2 && repost != null)
             {
-                return repost(Repost!);
+                return repost(__value2);
             }
-            else if (IsRepostOf && repostOf != null)
+            else if (RepostOf is { } __value3 && repostOf != null)
             {
-                return repostOf(RepostOf!);
+                return repostOf(__value3);
             }
-            else if (IsSaveOfRepost && saveOfRepost != null)
+            else if (SaveOfRepost is { } __value4 && saveOfRepost != null)
             {
-                return saveOfRepost(SaveOfRepost!);
+                return saveOfRepost(__value4);
             }
-            else if (IsTastemaker && tastemaker != null)
+            else if (Tastemaker is { } __value5 && tastemaker != null)
             {
-                return tastemaker(Tastemaker!);
+                return tastemaker(__value5);
             }
-            else if (IsRemix && remix != null)
+            else if (Remix is { } __value6 && remix != null)
             {
-                return remix(Remix!);
+                return remix(__value6);
             }
-            else if (IsCosign && cosign != null)
+            else if (Cosign is { } __value7 && cosign != null)
             {
-                return cosign(Cosign!);
+                return cosign(__value7);
             }
-            else if (IsCreate && create != null)
+            else if (Create is { } __value8 && create != null)
             {
-                return create(Create!);
+                return create(__value8);
             }
-            else if (IsSendTip && sendTip != null)
+            else if (SendTip is { } __value9 && sendTip != null)
             {
-                return sendTip(SendTip!);
+                return sendTip(__value9);
             }
-            else if (IsReceiveTip && receiveTip != null)
+            else if (ReceiveTip is { } __value10 && receiveTip != null)
             {
-                return receiveTip(ReceiveTip!);
+                return receiveTip(__value10);
             }
-            else if (IsSupporterDethroned && supporterDethroned != null)
+            else if (SupporterDethroned is { } __value11 && supporterDethroned != null)
             {
-                return supporterDethroned(SupporterDethroned!);
+                return supporterDethroned(__value11);
             }
-            else if (IsSupporterRankUp1 && supporterRankUp1 != null)
+            else if (SupporterRankUp1 is { } __value12 && supporterRankUp1 != null)
             {
-                return supporterRankUp1(SupporterRankUp1!);
+                return supporterRankUp1(__value12);
             }
-            else if (IsSupporterRankUp2 && supporterRankUp2 != null)
+            else if (SupporterRankUp2 is { } __value13 && supporterRankUp2 != null)
             {
-                return supporterRankUp2(SupporterRankUp2!);
+                return supporterRankUp2(__value13);
             }
-            else if (IsChallengeReward && challengeReward != null)
+            else if (ChallengeReward is { } __value14 && challengeReward != null)
             {
-                return challengeReward(ChallengeReward!);
+                return challengeReward(__value14);
             }
-            else if (IsClaimableReward && claimableReward != null)
+            else if (ClaimableReward is { } __value15 && claimableReward != null)
             {
-                return claimableReward(ClaimableReward!);
+                return claimableReward(__value15);
             }
-            else if (IsReaction && reaction != null)
+            else if (Reaction is { } __value16 && reaction != null)
             {
-                return reaction(Reaction!);
+                return reaction(__value16);
             }
-            else if (IsMilestone && milestone != null)
+            else if (Milestone is { } __value17 && milestone != null)
             {
-                return milestone(Milestone!);
+                return milestone(__value17);
             }
-            else if (IsTierChange && tierChange != null)
+            else if (TierChange is { } __value18 && tierChange != null)
             {
-                return tierChange(TierChange!);
+                return tierChange(__value18);
             }
-            else if (IsTrackAddedToPlaylist && trackAddedToPlaylist != null)
+            else if (TrackAddedToPlaylist is { } __value19 && trackAddedToPlaylist != null)
             {
-                return trackAddedToPlaylist(TrackAddedToPlaylist!);
+                return trackAddedToPlaylist(__value19);
             }
-            else if (IsTrackAddedToPurchasedAlbum && trackAddedToPurchasedAlbum != null)
+            else if (TrackAddedToPurchasedAlbum is { } __value20 && trackAddedToPurchasedAlbum != null)
             {
-                return trackAddedToPurchasedAlbum(TrackAddedToPurchasedAlbum!);
+                return trackAddedToPurchasedAlbum(__value20);
             }
-            else if (IsUsdcPurchaseSeller && usdcPurchaseSeller != null)
+            else if (UsdcPurchaseSeller is { } __value21 && usdcPurchaseSeller != null)
             {
-                return usdcPurchaseSeller(UsdcPurchaseSeller!);
+                return usdcPurchaseSeller(__value21);
             }
-            else if (IsUsdcPurchaseBuyer && usdcPurchaseBuyer != null)
+            else if (UsdcPurchaseBuyer is { } __value22 && usdcPurchaseBuyer != null)
             {
-                return usdcPurchaseBuyer(UsdcPurchaseBuyer!);
+                return usdcPurchaseBuyer(__value22);
             }
-            else if (IsRequestManager && requestManager != null)
+            else if (RequestManager is { } __value23 && requestManager != null)
             {
-                return requestManager(RequestManager!);
+                return requestManager(__value23);
             }
-            else if (IsApproveManagerRequest && approveManagerRequest != null)
+            else if (ApproveManagerRequest is { } __value24 && approveManagerRequest != null)
             {
-                return approveManagerRequest(ApproveManagerRequest!);
+                return approveManagerRequest(__value24);
             }
-            else if (IsTrending && trending != null)
+            else if (Trending is { } __value25 && trending != null)
             {
-                return trending(Trending!);
+                return trending(__value25);
             }
-            else if (IsTrendingPlaylist && trendingPlaylist != null)
+            else if (TrendingPlaylist is { } __value26 && trendingPlaylist != null)
             {
-                return trendingPlaylist(TrendingPlaylist!);
+                return trendingPlaylist(__value26);
             }
-            else if (IsTrendingUnderground && trendingUnderground != null)
+            else if (TrendingUnderground is { } __value27 && trendingUnderground != null)
             {
-                return trendingUnderground(TrendingUnderground!);
+                return trendingUnderground(__value27);
             }
-            else if (IsAnnouncement && announcement != null)
+            else if (Announcement is { } __value28 && announcement != null)
             {
-                return announcement(Announcement!);
+                return announcement(__value28);
             }
-            else if (IsComment && comment != null)
+            else if (Comment is { } __value29 && comment != null)
             {
-                return comment(Comment!);
+                return comment(__value29);
             }
-            else if (IsCommentThread && commentThread != null)
+            else if (CommentThread is { } __value30 && commentThread != null)
             {
-                return commentThread(CommentThread!);
+                return commentThread(__value30);
             }
-            else if (IsCommentMention && commentMention != null)
+            else if (CommentMention is { } __value31 && commentMention != null)
             {
-                return commentMention(CommentMention!);
+                return commentMention(__value31);
             }
-            else if (IsCommentReaction && commentReaction != null)
+            else if (CommentReaction is { } __value32 && commentReaction != null)
             {
-                return commentReaction(CommentReaction!);
+                return commentReaction(__value32);
             }
-            else if (IsListenStreakReminder && listenStreakReminder != null)
+            else if (ListenStreakReminder is { } __value33 && listenStreakReminder != null)
             {
-                return listenStreakReminder(ListenStreakReminder!);
+                return listenStreakReminder(__value33);
             }
-            else if (IsFanRemixContestStarted && fanRemixContestStarted != null)
+            else if (FanRemixContestStarted is { } __value34 && fanRemixContestStarted != null)
             {
-                return fanRemixContestStarted(FanRemixContestStarted!);
+                return fanRemixContestStarted(__value34);
             }
-            else if (IsFanRemixContestEnded && fanRemixContestEnded != null)
+            else if (FanRemixContestEnded is { } __value35 && fanRemixContestEnded != null)
             {
-                return fanRemixContestEnded(FanRemixContestEnded!);
+                return fanRemixContestEnded(__value35);
             }
-            else if (IsFanRemixContestEndingSoon && fanRemixContestEndingSoon != null)
+            else if (FanRemixContestEndingSoon is { } __value36 && fanRemixContestEndingSoon != null)
             {
-                return fanRemixContestEndingSoon(FanRemixContestEndingSoon!);
+                return fanRemixContestEndingSoon(__value36);
             }
-            else if (IsArtistRemixContestEnded && artistRemixContestEnded != null)
+            else if (ArtistRemixContestEnded is { } __value37 && artistRemixContestEnded != null)
             {
-                return artistRemixContestEnded(ArtistRemixContestEnded!);
+                return artistRemixContestEnded(__value37);
             }
-            else if (IsArtistRemixContestEndingSoon && artistRemixContestEndingSoon != null)
+            else if (ArtistRemixContestEndingSoon is { } __value38 && artistRemixContestEndingSoon != null)
             {
-                return artistRemixContestEndingSoon(ArtistRemixContestEndingSoon!);
+                return artistRemixContestEndingSoon(__value38);
             }
-            else if (IsArtistRemixContestSubmissions && artistRemixContestSubmissions != null)
+            else if (ArtistRemixContestSubmissions is { } __value39 && artistRemixContestSubmissions != null)
             {
-                return artistRemixContestSubmissions(ArtistRemixContestSubmissions!);
+                return artistRemixContestSubmissions(__value39);
             }
-            else if (IsFanRemixContestWinnersSelected && fanRemixContestWinnersSelected != null)
+            else if (FanRemixContestWinnersSelected is { } __value40 && fanRemixContestWinnersSelected != null)
             {
-                return fanRemixContestWinnersSelected(FanRemixContestWinnersSelected!);
+                return fanRemixContestWinnersSelected(__value40);
             }
-            else if (IsRemixContestUpdate && remixContestUpdate != null)
+            else if (RemixContestUpdate is { } __value41 && remixContestUpdate != null)
             {
-                return remixContestUpdate(RemixContestUpdate!);
+                return remixContestUpdate(__value41);
             }
-            else if (IsFanRemixContestSubmission && fanRemixContestSubmission != null)
+            else if (FanRemixContestSubmission is { } __value42 && fanRemixContestSubmission != null)
             {
-                return fanRemixContestSubmission(FanRemixContestSubmission!);
+                return fanRemixContestSubmission(__value42);
             }
-            else if (IsFanClubTextPost && fanClubTextPost != null)
+            else if (FanClubTextPost is { } __value43 && fanClubTextPost != null)
             {
-                return fanClubTextPost(FanClubTextPost!);
+                return fanClubTextPost(__value43);
             }
 
             return default(TResult);
@@ -3162,181 +3162,181 @@ namespace Audius
                 Validate();
             }
 
-            if (IsFollow)
+            if (Follow is { } __value0)
             {
-                follow?.Invoke(Follow!);
+                follow?.Invoke(__value0);
             }
-            else if (IsSave)
+            else if (Save is { } __value1)
             {
-                save?.Invoke(Save!);
+                save?.Invoke(__value1);
             }
-            else if (IsRepost)
+            else if (Repost is { } __value2)
             {
-                repost?.Invoke(Repost!);
+                repost?.Invoke(__value2);
             }
-            else if (IsRepostOf)
+            else if (RepostOf is { } __value3)
             {
-                repostOf?.Invoke(RepostOf!);
+                repostOf?.Invoke(__value3);
             }
-            else if (IsSaveOfRepost)
+            else if (SaveOfRepost is { } __value4)
             {
-                saveOfRepost?.Invoke(SaveOfRepost!);
+                saveOfRepost?.Invoke(__value4);
             }
-            else if (IsTastemaker)
+            else if (Tastemaker is { } __value5)
             {
-                tastemaker?.Invoke(Tastemaker!);
+                tastemaker?.Invoke(__value5);
             }
-            else if (IsRemix)
+            else if (Remix is { } __value6)
             {
-                remix?.Invoke(Remix!);
+                remix?.Invoke(__value6);
             }
-            else if (IsCosign)
+            else if (Cosign is { } __value7)
             {
-                cosign?.Invoke(Cosign!);
+                cosign?.Invoke(__value7);
             }
-            else if (IsCreate)
+            else if (Create is { } __value8)
             {
-                create?.Invoke(Create!);
+                create?.Invoke(__value8);
             }
-            else if (IsSendTip)
+            else if (SendTip is { } __value9)
             {
-                sendTip?.Invoke(SendTip!);
+                sendTip?.Invoke(__value9);
             }
-            else if (IsReceiveTip)
+            else if (ReceiveTip is { } __value10)
             {
-                receiveTip?.Invoke(ReceiveTip!);
+                receiveTip?.Invoke(__value10);
             }
-            else if (IsSupporterDethroned)
+            else if (SupporterDethroned is { } __value11)
             {
-                supporterDethroned?.Invoke(SupporterDethroned!);
+                supporterDethroned?.Invoke(__value11);
             }
-            else if (IsSupporterRankUp1)
+            else if (SupporterRankUp1 is { } __value12)
             {
-                supporterRankUp1?.Invoke(SupporterRankUp1!);
+                supporterRankUp1?.Invoke(__value12);
             }
-            else if (IsSupporterRankUp2)
+            else if (SupporterRankUp2 is { } __value13)
             {
-                supporterRankUp2?.Invoke(SupporterRankUp2!);
+                supporterRankUp2?.Invoke(__value13);
             }
-            else if (IsChallengeReward)
+            else if (ChallengeReward is { } __value14)
             {
-                challengeReward?.Invoke(ChallengeReward!);
+                challengeReward?.Invoke(__value14);
             }
-            else if (IsClaimableReward)
+            else if (ClaimableReward is { } __value15)
             {
-                claimableReward?.Invoke(ClaimableReward!);
+                claimableReward?.Invoke(__value15);
             }
-            else if (IsReaction)
+            else if (Reaction is { } __value16)
             {
-                reaction?.Invoke(Reaction!);
+                reaction?.Invoke(__value16);
             }
-            else if (IsMilestone)
+            else if (Milestone is { } __value17)
             {
-                milestone?.Invoke(Milestone!);
+                milestone?.Invoke(__value17);
             }
-            else if (IsTierChange)
+            else if (TierChange is { } __value18)
             {
-                tierChange?.Invoke(TierChange!);
+                tierChange?.Invoke(__value18);
             }
-            else if (IsTrackAddedToPlaylist)
+            else if (TrackAddedToPlaylist is { } __value19)
             {
-                trackAddedToPlaylist?.Invoke(TrackAddedToPlaylist!);
+                trackAddedToPlaylist?.Invoke(__value19);
             }
-            else if (IsTrackAddedToPurchasedAlbum)
+            else if (TrackAddedToPurchasedAlbum is { } __value20)
             {
-                trackAddedToPurchasedAlbum?.Invoke(TrackAddedToPurchasedAlbum!);
+                trackAddedToPurchasedAlbum?.Invoke(__value20);
             }
-            else if (IsUsdcPurchaseSeller)
+            else if (UsdcPurchaseSeller is { } __value21)
             {
-                usdcPurchaseSeller?.Invoke(UsdcPurchaseSeller!);
+                usdcPurchaseSeller?.Invoke(__value21);
             }
-            else if (IsUsdcPurchaseBuyer)
+            else if (UsdcPurchaseBuyer is { } __value22)
             {
-                usdcPurchaseBuyer?.Invoke(UsdcPurchaseBuyer!);
+                usdcPurchaseBuyer?.Invoke(__value22);
             }
-            else if (IsRequestManager)
+            else if (RequestManager is { } __value23)
             {
-                requestManager?.Invoke(RequestManager!);
+                requestManager?.Invoke(__value23);
             }
-            else if (IsApproveManagerRequest)
+            else if (ApproveManagerRequest is { } __value24)
             {
-                approveManagerRequest?.Invoke(ApproveManagerRequest!);
+                approveManagerRequest?.Invoke(__value24);
             }
-            else if (IsTrending)
+            else if (Trending is { } __value25)
             {
-                trending?.Invoke(Trending!);
+                trending?.Invoke(__value25);
             }
-            else if (IsTrendingPlaylist)
+            else if (TrendingPlaylist is { } __value26)
             {
-                trendingPlaylist?.Invoke(TrendingPlaylist!);
+                trendingPlaylist?.Invoke(__value26);
             }
-            else if (IsTrendingUnderground)
+            else if (TrendingUnderground is { } __value27)
             {
-                trendingUnderground?.Invoke(TrendingUnderground!);
+                trendingUnderground?.Invoke(__value27);
             }
-            else if (IsAnnouncement)
+            else if (Announcement is { } __value28)
             {
-                announcement?.Invoke(Announcement!);
+                announcement?.Invoke(__value28);
             }
-            else if (IsComment)
+            else if (Comment is { } __value29)
             {
-                comment?.Invoke(Comment!);
+                comment?.Invoke(__value29);
             }
-            else if (IsCommentThread)
+            else if (CommentThread is { } __value30)
             {
-                commentThread?.Invoke(CommentThread!);
+                commentThread?.Invoke(__value30);
             }
-            else if (IsCommentMention)
+            else if (CommentMention is { } __value31)
             {
-                commentMention?.Invoke(CommentMention!);
+                commentMention?.Invoke(__value31);
             }
-            else if (IsCommentReaction)
+            else if (CommentReaction is { } __value32)
             {
-                commentReaction?.Invoke(CommentReaction!);
+                commentReaction?.Invoke(__value32);
             }
-            else if (IsListenStreakReminder)
+            else if (ListenStreakReminder is { } __value33)
             {
-                listenStreakReminder?.Invoke(ListenStreakReminder!);
+                listenStreakReminder?.Invoke(__value33);
             }
-            else if (IsFanRemixContestStarted)
+            else if (FanRemixContestStarted is { } __value34)
             {
-                fanRemixContestStarted?.Invoke(FanRemixContestStarted!);
+                fanRemixContestStarted?.Invoke(__value34);
             }
-            else if (IsFanRemixContestEnded)
+            else if (FanRemixContestEnded is { } __value35)
             {
-                fanRemixContestEnded?.Invoke(FanRemixContestEnded!);
+                fanRemixContestEnded?.Invoke(__value35);
             }
-            else if (IsFanRemixContestEndingSoon)
+            else if (FanRemixContestEndingSoon is { } __value36)
             {
-                fanRemixContestEndingSoon?.Invoke(FanRemixContestEndingSoon!);
+                fanRemixContestEndingSoon?.Invoke(__value36);
             }
-            else if (IsArtistRemixContestEnded)
+            else if (ArtistRemixContestEnded is { } __value37)
             {
-                artistRemixContestEnded?.Invoke(ArtistRemixContestEnded!);
+                artistRemixContestEnded?.Invoke(__value37);
             }
-            else if (IsArtistRemixContestEndingSoon)
+            else if (ArtistRemixContestEndingSoon is { } __value38)
             {
-                artistRemixContestEndingSoon?.Invoke(ArtistRemixContestEndingSoon!);
+                artistRemixContestEndingSoon?.Invoke(__value38);
             }
-            else if (IsArtistRemixContestSubmissions)
+            else if (ArtistRemixContestSubmissions is { } __value39)
             {
-                artistRemixContestSubmissions?.Invoke(ArtistRemixContestSubmissions!);
+                artistRemixContestSubmissions?.Invoke(__value39);
             }
-            else if (IsFanRemixContestWinnersSelected)
+            else if (FanRemixContestWinnersSelected is { } __value40)
             {
-                fanRemixContestWinnersSelected?.Invoke(FanRemixContestWinnersSelected!);
+                fanRemixContestWinnersSelected?.Invoke(__value40);
             }
-            else if (IsRemixContestUpdate)
+            else if (RemixContestUpdate is { } __value41)
             {
-                remixContestUpdate?.Invoke(RemixContestUpdate!);
+                remixContestUpdate?.Invoke(__value41);
             }
-            else if (IsFanRemixContestSubmission)
+            else if (FanRemixContestSubmission is { } __value42)
             {
-                fanRemixContestSubmission?.Invoke(FanRemixContestSubmission!);
+                fanRemixContestSubmission?.Invoke(__value42);
             }
-            else if (IsFanClubTextPost)
+            else if (FanClubTextPost is { } __value43)
             {
-                fanClubTextPost?.Invoke(FanClubTextPost!);
+                fanClubTextPost?.Invoke(__value43);
             }
         }
 
@@ -3395,181 +3395,181 @@ namespace Audius
                 Validate();
             }
 
-            if (IsFollow)
+            if (Follow is { } __value0)
             {
-                follow?.Invoke(Follow!);
+                follow?.Invoke(__value0);
             }
-            else if (IsSave)
+            else if (Save is { } __value1)
             {
-                save?.Invoke(Save!);
+                save?.Invoke(__value1);
             }
-            else if (IsRepost)
+            else if (Repost is { } __value2)
             {
-                repost?.Invoke(Repost!);
+                repost?.Invoke(__value2);
             }
-            else if (IsRepostOf)
+            else if (RepostOf is { } __value3)
             {
-                repostOf?.Invoke(RepostOf!);
+                repostOf?.Invoke(__value3);
             }
-            else if (IsSaveOfRepost)
+            else if (SaveOfRepost is { } __value4)
             {
-                saveOfRepost?.Invoke(SaveOfRepost!);
+                saveOfRepost?.Invoke(__value4);
             }
-            else if (IsTastemaker)
+            else if (Tastemaker is { } __value5)
             {
-                tastemaker?.Invoke(Tastemaker!);
+                tastemaker?.Invoke(__value5);
             }
-            else if (IsRemix)
+            else if (Remix is { } __value6)
             {
-                remix?.Invoke(Remix!);
+                remix?.Invoke(__value6);
             }
-            else if (IsCosign)
+            else if (Cosign is { } __value7)
             {
-                cosign?.Invoke(Cosign!);
+                cosign?.Invoke(__value7);
             }
-            else if (IsCreate)
+            else if (Create is { } __value8)
             {
-                create?.Invoke(Create!);
+                create?.Invoke(__value8);
             }
-            else if (IsSendTip)
+            else if (SendTip is { } __value9)
             {
-                sendTip?.Invoke(SendTip!);
+                sendTip?.Invoke(__value9);
             }
-            else if (IsReceiveTip)
+            else if (ReceiveTip is { } __value10)
             {
-                receiveTip?.Invoke(ReceiveTip!);
+                receiveTip?.Invoke(__value10);
             }
-            else if (IsSupporterDethroned)
+            else if (SupporterDethroned is { } __value11)
             {
-                supporterDethroned?.Invoke(SupporterDethroned!);
+                supporterDethroned?.Invoke(__value11);
             }
-            else if (IsSupporterRankUp1)
+            else if (SupporterRankUp1 is { } __value12)
             {
-                supporterRankUp1?.Invoke(SupporterRankUp1!);
+                supporterRankUp1?.Invoke(__value12);
             }
-            else if (IsSupporterRankUp2)
+            else if (SupporterRankUp2 is { } __value13)
             {
-                supporterRankUp2?.Invoke(SupporterRankUp2!);
+                supporterRankUp2?.Invoke(__value13);
             }
-            else if (IsChallengeReward)
+            else if (ChallengeReward is { } __value14)
             {
-                challengeReward?.Invoke(ChallengeReward!);
+                challengeReward?.Invoke(__value14);
             }
-            else if (IsClaimableReward)
+            else if (ClaimableReward is { } __value15)
             {
-                claimableReward?.Invoke(ClaimableReward!);
+                claimableReward?.Invoke(__value15);
             }
-            else if (IsReaction)
+            else if (Reaction is { } __value16)
             {
-                reaction?.Invoke(Reaction!);
+                reaction?.Invoke(__value16);
             }
-            else if (IsMilestone)
+            else if (Milestone is { } __value17)
             {
-                milestone?.Invoke(Milestone!);
+                milestone?.Invoke(__value17);
             }
-            else if (IsTierChange)
+            else if (TierChange is { } __value18)
             {
-                tierChange?.Invoke(TierChange!);
+                tierChange?.Invoke(__value18);
             }
-            else if (IsTrackAddedToPlaylist)
+            else if (TrackAddedToPlaylist is { } __value19)
             {
-                trackAddedToPlaylist?.Invoke(TrackAddedToPlaylist!);
+                trackAddedToPlaylist?.Invoke(__value19);
             }
-            else if (IsTrackAddedToPurchasedAlbum)
+            else if (TrackAddedToPurchasedAlbum is { } __value20)
             {
-                trackAddedToPurchasedAlbum?.Invoke(TrackAddedToPurchasedAlbum!);
+                trackAddedToPurchasedAlbum?.Invoke(__value20);
             }
-            else if (IsUsdcPurchaseSeller)
+            else if (UsdcPurchaseSeller is { } __value21)
             {
-                usdcPurchaseSeller?.Invoke(UsdcPurchaseSeller!);
+                usdcPurchaseSeller?.Invoke(__value21);
             }
-            else if (IsUsdcPurchaseBuyer)
+            else if (UsdcPurchaseBuyer is { } __value22)
             {
-                usdcPurchaseBuyer?.Invoke(UsdcPurchaseBuyer!);
+                usdcPurchaseBuyer?.Invoke(__value22);
             }
-            else if (IsRequestManager)
+            else if (RequestManager is { } __value23)
             {
-                requestManager?.Invoke(RequestManager!);
+                requestManager?.Invoke(__value23);
             }
-            else if (IsApproveManagerRequest)
+            else if (ApproveManagerRequest is { } __value24)
             {
-                approveManagerRequest?.Invoke(ApproveManagerRequest!);
+                approveManagerRequest?.Invoke(__value24);
             }
-            else if (IsTrending)
+            else if (Trending is { } __value25)
             {
-                trending?.Invoke(Trending!);
+                trending?.Invoke(__value25);
             }
-            else if (IsTrendingPlaylist)
+            else if (TrendingPlaylist is { } __value26)
             {
-                trendingPlaylist?.Invoke(TrendingPlaylist!);
+                trendingPlaylist?.Invoke(__value26);
             }
-            else if (IsTrendingUnderground)
+            else if (TrendingUnderground is { } __value27)
             {
-                trendingUnderground?.Invoke(TrendingUnderground!);
+                trendingUnderground?.Invoke(__value27);
             }
-            else if (IsAnnouncement)
+            else if (Announcement is { } __value28)
             {
-                announcement?.Invoke(Announcement!);
+                announcement?.Invoke(__value28);
             }
-            else if (IsComment)
+            else if (Comment is { } __value29)
             {
-                comment?.Invoke(Comment!);
+                comment?.Invoke(__value29);
             }
-            else if (IsCommentThread)
+            else if (CommentThread is { } __value30)
             {
-                commentThread?.Invoke(CommentThread!);
+                commentThread?.Invoke(__value30);
             }
-            else if (IsCommentMention)
+            else if (CommentMention is { } __value31)
             {
-                commentMention?.Invoke(CommentMention!);
+                commentMention?.Invoke(__value31);
             }
-            else if (IsCommentReaction)
+            else if (CommentReaction is { } __value32)
             {
-                commentReaction?.Invoke(CommentReaction!);
+                commentReaction?.Invoke(__value32);
             }
-            else if (IsListenStreakReminder)
+            else if (ListenStreakReminder is { } __value33)
             {
-                listenStreakReminder?.Invoke(ListenStreakReminder!);
+                listenStreakReminder?.Invoke(__value33);
             }
-            else if (IsFanRemixContestStarted)
+            else if (FanRemixContestStarted is { } __value34)
             {
-                fanRemixContestStarted?.Invoke(FanRemixContestStarted!);
+                fanRemixContestStarted?.Invoke(__value34);
             }
-            else if (IsFanRemixContestEnded)
+            else if (FanRemixContestEnded is { } __value35)
             {
-                fanRemixContestEnded?.Invoke(FanRemixContestEnded!);
+                fanRemixContestEnded?.Invoke(__value35);
             }
-            else if (IsFanRemixContestEndingSoon)
+            else if (FanRemixContestEndingSoon is { } __value36)
             {
-                fanRemixContestEndingSoon?.Invoke(FanRemixContestEndingSoon!);
+                fanRemixContestEndingSoon?.Invoke(__value36);
             }
-            else if (IsArtistRemixContestEnded)
+            else if (ArtistRemixContestEnded is { } __value37)
             {
-                artistRemixContestEnded?.Invoke(ArtistRemixContestEnded!);
+                artistRemixContestEnded?.Invoke(__value37);
             }
-            else if (IsArtistRemixContestEndingSoon)
+            else if (ArtistRemixContestEndingSoon is { } __value38)
             {
-                artistRemixContestEndingSoon?.Invoke(ArtistRemixContestEndingSoon!);
+                artistRemixContestEndingSoon?.Invoke(__value38);
             }
-            else if (IsArtistRemixContestSubmissions)
+            else if (ArtistRemixContestSubmissions is { } __value39)
             {
-                artistRemixContestSubmissions?.Invoke(ArtistRemixContestSubmissions!);
+                artistRemixContestSubmissions?.Invoke(__value39);
             }
-            else if (IsFanRemixContestWinnersSelected)
+            else if (FanRemixContestWinnersSelected is { } __value40)
             {
-                fanRemixContestWinnersSelected?.Invoke(FanRemixContestWinnersSelected!);
+                fanRemixContestWinnersSelected?.Invoke(__value40);
             }
-            else if (IsRemixContestUpdate)
+            else if (RemixContestUpdate is { } __value41)
             {
-                remixContestUpdate?.Invoke(RemixContestUpdate!);
+                remixContestUpdate?.Invoke(__value41);
             }
-            else if (IsFanRemixContestSubmission)
+            else if (FanRemixContestSubmission is { } __value42)
             {
-                fanRemixContestSubmission?.Invoke(FanRemixContestSubmission!);
+                fanRemixContestSubmission?.Invoke(__value42);
             }
-            else if (IsFanClubTextPost)
+            else if (FanClubTextPost is { } __value43)
             {
-                fanClubTextPost?.Invoke(FanClubTextPost!);
+                fanClubTextPost?.Invoke(__value43);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.Activity PickActivity() => IsActivity
-            ? Activity!
+        public global::Audius.Activity PickActivity() => Activity is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Activity' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CollectionActivityWithoutTracksVariant2 PickCollectionActivityWithoutTracksVariant2() => IsCollectionActivityWithoutTracksVariant2
-            ? CollectionActivityWithoutTracksVariant2!
+        public global::Audius.CollectionActivityWithoutTracksVariant2 PickCollectionActivityWithoutTracksVariant2() => CollectionActivityWithoutTracksVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CollectionActivityWithoutTracksVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity && activity != null)
+            if (Activity is { } __value0 && activity != null)
             {
-                return activity(Activity!);
+                return activity(__value0);
             }
-            else if (IsCollectionActivityWithoutTracksVariant2 && collectionActivityWithoutTracksVariant2 != null)
+            else if (CollectionActivityWithoutTracksVariant2 is { } __value1 && collectionActivityWithoutTracksVariant2 != null)
             {
-                return collectionActivityWithoutTracksVariant2(CollectionActivityWithoutTracksVariant2!);
+                return collectionActivityWithoutTracksVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity)
+            if (Activity is { } __value0)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value0);
             }
-            else if (IsCollectionActivityWithoutTracksVariant2)
+            else if (CollectionActivityWithoutTracksVariant2 is { } __value1)
             {
-                collectionActivityWithoutTracksVariant2?.Invoke(CollectionActivityWithoutTracksVariant2!);
+                collectionActivityWithoutTracksVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity)
+            if (Activity is { } __value0)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value0);
             }
-            else if (IsCollectionActivityWithoutTracksVariant2)
+            else if (CollectionActivityWithoutTracksVariant2 is { } __value1)
             {
-                collectionActivityWithoutTracksVariant2?.Invoke(CollectionActivityWithoutTracksVariant2!);
+                collectionActivityWithoutTracksVariant2?.Invoke(__value1);
             }
         }
 

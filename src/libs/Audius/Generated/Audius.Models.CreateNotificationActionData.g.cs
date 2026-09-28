@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CreatePlaylistNotificationActionData PickPlaylist() => IsPlaylist
-            ? Playlist!
+        public global::Audius.CreatePlaylistNotificationActionData PickPlaylist() => Playlist is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Playlist' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.CreateTrackNotificationActionData PickTrack() => IsTrack
-            ? Track!
+        public global::Audius.CreateTrackNotificationActionData PickTrack() => Track is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Track' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsPlaylist && playlist != null)
+            if (Playlist is { } __value0 && playlist != null)
             {
-                return playlist(Playlist!);
+                return playlist(__value0);
             }
-            else if (IsTrack && track != null)
+            else if (Track is { } __value1 && track != null)
             {
-                return track(Track!);
+                return track(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsPlaylist)
+            if (Playlist is { } __value0)
             {
-                playlist?.Invoke(Playlist!);
+                playlist?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsPlaylist)
+            if (Playlist is { } __value0)
             {
-                playlist?.Invoke(Playlist!);
+                playlist?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
         }
 

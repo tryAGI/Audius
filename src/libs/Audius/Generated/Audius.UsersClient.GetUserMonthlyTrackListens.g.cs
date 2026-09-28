@@ -122,9 +122,9 @@ namespace Audius
                 PrepareGetUserMonthlyTrackListensRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id!,
-                    startTime: startTime!,
-                    endTime: endTime!);
+                    id: id,
+                    startTime: startTime,
+                    endTime: endTime);
 
                 return __httpRequest;
             }
@@ -146,7 +146,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/listen_counts_monthly\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -180,7 +180,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/listen_counts_monthly\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -221,7 +221,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/listen_counts_monthly\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -269,7 +269,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/listen_counts_monthly\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -291,7 +291,7 @@ namespace Audius
                                 pathTemplate: "$\"/users/{id}/listen_counts_monthly\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
