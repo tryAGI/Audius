@@ -197,7 +197,7 @@ namespace Audius
                                 .AddOptionalParameter("filter", filter?.ToValueString())
                                 .AddOptionalParameter("tracks_only", tracksOnly?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("with_users", withUsers?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("followee_user_id", followeeUserId, selector: static x => x.ToString()!, delimiter: ",", explode: true)
+                                .AddOptionalParameter("followee_user_id", followeeUserId, selector: static x => x.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."), delimiter: ",", explode: true)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Audius.AutoSDKRequestOptionsSupport.AppendQueryParameters(

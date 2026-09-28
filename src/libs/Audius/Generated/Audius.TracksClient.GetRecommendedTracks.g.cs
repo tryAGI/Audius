@@ -150,7 +150,7 @@ namespace Audius
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("genre", genre)
                                 .AddOptionalParameter("time", time?.ToValueString())
-                                .AddOptionalParameter("exclusion_list", exclusionList, selector: static x => x.ToString()!, delimiter: ",", explode: true)
+                                .AddOptionalParameter("exclusion_list", exclusionList, selector: static x => x.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."), delimiter: ",", explode: true)
                                 .AddOptionalParameter("user_id", userId)
                                 ;
                             var __path = __pathBuilder.ToString();
