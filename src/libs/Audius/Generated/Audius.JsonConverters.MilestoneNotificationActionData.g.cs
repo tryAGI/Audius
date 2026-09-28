@@ -173,19 +173,19 @@ namespace Audius.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.UserMilestoneNotificationActionData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.UserMilestoneNotificationActionData?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.UserMilestoneNotificationActionData).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.User!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUser(), typeInfo);
             }
             else if (value.IsTrack)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrackMilestoneNotificationActionData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrackMilestoneNotificationActionData?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrackMilestoneNotificationActionData).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Track!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrack(), typeInfo);
             }
             else if (value.IsPlaylist)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.PlaylistMilestoneNotificationActionData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.PlaylistMilestoneNotificationActionData?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.PlaylistMilestoneNotificationActionData).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Playlist!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPlaylist(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.UserMilestoneNotificationActionData PickUser() => IsUser
-            ? User!
+        public global::Audius.UserMilestoneNotificationActionData PickUser() => User is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'User' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrackMilestoneNotificationActionData PickTrack() => IsTrack
-            ? Track!
+        public global::Audius.TrackMilestoneNotificationActionData PickTrack() => Track is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Track' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.PlaylistMilestoneNotificationActionData PickPlaylist() => IsPlaylist
-            ? Playlist!
+        public global::Audius.PlaylistMilestoneNotificationActionData PickPlaylist() => Playlist is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Playlist' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Audius
                 Validate();
             }
 
-            if (IsUser && user != null)
+            if (User is { } __value0 && user != null)
             {
-                return user(User!);
+                return user(__value0);
             }
-            else if (IsTrack && track != null)
+            else if (Track is { } __value1 && track != null)
             {
-                return track(Track!);
+                return track(__value1);
             }
-            else if (IsPlaylist && playlist != null)
+            else if (Playlist is { } __value2 && playlist != null)
             {
-                return playlist(Playlist!);
+                return playlist(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Audius
                 Validate();
             }
 
-            if (IsUser)
+            if (User is { } __value0)
             {
-                user?.Invoke(User!);
+                user?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
-            else if (IsPlaylist)
+            else if (Playlist is { } __value2)
             {
-                playlist?.Invoke(Playlist!);
+                playlist?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Audius
                 Validate();
             }
 
-            if (IsUser)
+            if (User is { } __value0)
             {
-                user?.Invoke(User!);
+                user?.Invoke(__value0);
             }
-            else if (IsTrack)
+            else if (Track is { } __value1)
             {
-                track?.Invoke(Track!);
+                track?.Invoke(__value1);
             }
-            else if (IsPlaylist)
+            else if (Playlist is { } __value2)
             {
-                playlist?.Invoke(Playlist!);
+                playlist?.Invoke(__value2);
             }
         }
 

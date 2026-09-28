@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TipGate PickTip() => IsTip
-            ? Tip!
+        public global::Audius.TipGate PickTip() => Tip is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Tip' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.FollowGate PickFollow() => IsFollow
-            ? Follow!
+        public global::Audius.FollowGate PickFollow() => Follow is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Follow' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.PurchaseGate PickPurchase() => IsPurchase
-            ? Purchase!
+        public global::Audius.PurchaseGate PickPurchase() => Purchase is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Purchase' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TokenGate PickToken() => IsToken
-            ? Token!
+        public global::Audius.TokenGate PickToken() => Token is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Token' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Audius
                 Validate();
             }
 
-            if (IsTip && tip != null)
+            if (Tip is { } __value0 && tip != null)
             {
-                return tip(Tip!);
+                return tip(__value0);
             }
-            else if (IsFollow && follow != null)
+            else if (Follow is { } __value1 && follow != null)
             {
-                return follow(Follow!);
+                return follow(__value1);
             }
-            else if (IsPurchase && purchase != null)
+            else if (Purchase is { } __value2 && purchase != null)
             {
-                return purchase(Purchase!);
+                return purchase(__value2);
             }
-            else if (IsToken && token != null)
+            else if (Token is { } __value3 && token != null)
             {
-                return token(Token!);
+                return token(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Audius
                 Validate();
             }
 
-            if (IsTip)
+            if (Tip is { } __value0)
             {
-                tip?.Invoke(Tip!);
+                tip?.Invoke(__value0);
             }
-            else if (IsFollow)
+            else if (Follow is { } __value1)
             {
-                follow?.Invoke(Follow!);
+                follow?.Invoke(__value1);
             }
-            else if (IsPurchase)
+            else if (Purchase is { } __value2)
             {
-                purchase?.Invoke(Purchase!);
+                purchase?.Invoke(__value2);
             }
-            else if (IsToken)
+            else if (Token is { } __value3)
             {
-                token?.Invoke(Token!);
+                token?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Audius
                 Validate();
             }
 
-            if (IsTip)
+            if (Tip is { } __value0)
             {
-                tip?.Invoke(Tip!);
+                tip?.Invoke(__value0);
             }
-            else if (IsFollow)
+            else if (Follow is { } __value1)
             {
-                follow?.Invoke(Follow!);
+                follow?.Invoke(__value1);
             }
-            else if (IsPurchase)
+            else if (Purchase is { } __value2)
             {
-                purchase?.Invoke(Purchase!);
+                purchase?.Invoke(__value2);
             }
-            else if (IsToken)
+            else if (Token is { } __value3)
             {
-                token?.Invoke(Token!);
+                token?.Invoke(__value3);
             }
         }
 

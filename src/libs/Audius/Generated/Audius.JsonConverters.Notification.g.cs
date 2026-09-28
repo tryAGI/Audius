@@ -1900,265 +1900,265 @@ namespace Audius.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FollowNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FollowNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FollowNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Follow!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFollow(), typeInfo);
             }
             else if (value.IsSave)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SaveNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SaveNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SaveNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Save!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSave(), typeInfo);
             }
             else if (value.IsRepost)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.RepostNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.RepostNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.RepostNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Repost!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRepost(), typeInfo);
             }
             else if (value.IsRepostOf)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.RepostOfRepostNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.RepostOfRepostNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.RepostOfRepostNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RepostOf!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRepostOf(), typeInfo);
             }
             else if (value.IsSaveOfRepost)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SaveOfRepostNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SaveOfRepostNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SaveOfRepostNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SaveOfRepost!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSaveOfRepost(), typeInfo);
             }
             else if (value.IsTastemaker)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TastemakerNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TastemakerNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TastemakerNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tastemaker!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTastemaker(), typeInfo);
             }
             else if (value.IsRemix)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.RemixNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.RemixNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.RemixNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Remix!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRemix(), typeInfo);
             }
             else if (value.IsCosign)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CosignNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CosignNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CosignNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Cosign!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCosign(), typeInfo);
             }
             else if (value.IsCreate)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CreateNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CreateNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CreateNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Create!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCreate(), typeInfo);
             }
             else if (value.IsSendTip)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SendTipNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SendTipNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SendTipNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SendTip!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSendTip(), typeInfo);
             }
             else if (value.IsReceiveTip)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ReceiveTipNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ReceiveTipNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ReceiveTipNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReceiveTip!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReceiveTip(), typeInfo);
             }
             else if (value.IsSupporterDethroned)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SupporterDethronedNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SupporterDethronedNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SupporterDethronedNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SupporterDethroned!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSupporterDethroned(), typeInfo);
             }
             else if (value.IsSupporterRankUp1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SupporterRankUpNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SupporterRankUpNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SupporterRankUpNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SupporterRankUp1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSupporterRankUp1(), typeInfo);
             }
             else if (value.IsSupporterRankUp2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.SupporterRankUpNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.SupporterRankUpNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.SupporterRankUpNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SupporterRankUp2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSupporterRankUp2(), typeInfo);
             }
             else if (value.IsChallengeReward)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ChallengeRewardNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ChallengeRewardNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ChallengeRewardNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ChallengeReward!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickChallengeReward(), typeInfo);
             }
             else if (value.IsClaimableReward)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ClaimableRewardNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ClaimableRewardNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ClaimableRewardNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ClaimableReward!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickClaimableReward(), typeInfo);
             }
             else if (value.IsReaction)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ReactionNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ReactionNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ReactionNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Reaction!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReaction(), typeInfo);
             }
             else if (value.IsMilestone)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.MilestoneNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.MilestoneNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.MilestoneNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Milestone!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickMilestone(), typeInfo);
             }
             else if (value.IsTierChange)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TierChangeNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TierChangeNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TierChangeNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TierChange!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTierChange(), typeInfo);
             }
             else if (value.IsTrackAddedToPlaylist)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrackAddedToPlaylistNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrackAddedToPlaylistNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrackAddedToPlaylistNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TrackAddedToPlaylist!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrackAddedToPlaylist(), typeInfo);
             }
             else if (value.IsTrackAddedToPurchasedAlbum)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrackAddedToPurchasedAlbumNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrackAddedToPurchasedAlbumNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrackAddedToPurchasedAlbumNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TrackAddedToPurchasedAlbum!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrackAddedToPurchasedAlbum(), typeInfo);
             }
             else if (value.IsUsdcPurchaseSeller)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.UsdcPurchaseSellerNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.UsdcPurchaseSellerNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.UsdcPurchaseSellerNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UsdcPurchaseSeller!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUsdcPurchaseSeller(), typeInfo);
             }
             else if (value.IsUsdcPurchaseBuyer)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.UsdcPurchaseBuyerNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.UsdcPurchaseBuyerNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.UsdcPurchaseBuyerNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UsdcPurchaseBuyer!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUsdcPurchaseBuyer(), typeInfo);
             }
             else if (value.IsRequestManager)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.RequestManagerNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.RequestManagerNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.RequestManagerNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RequestManager!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRequestManager(), typeInfo);
             }
             else if (value.IsApproveManagerRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ApproveManagerRequestNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ApproveManagerRequestNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ApproveManagerRequestNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApproveManagerRequest!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApproveManagerRequest(), typeInfo);
             }
             else if (value.IsTrending)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrendingNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrendingNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrendingNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Trending!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrending(), typeInfo);
             }
             else if (value.IsTrendingPlaylist)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrendingPlaylistNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrendingPlaylistNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrendingPlaylistNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TrendingPlaylist!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrendingPlaylist(), typeInfo);
             }
             else if (value.IsTrendingUnderground)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrendingUndergroundNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrendingUndergroundNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrendingUndergroundNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TrendingUnderground!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrendingUnderground(), typeInfo);
             }
             else if (value.IsAnnouncement)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.AnnouncementNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.AnnouncementNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.AnnouncementNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Announcement!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAnnouncement(), typeInfo);
             }
             else if (value.IsComment)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CommentNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CommentNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CommentNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Comment!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickComment(), typeInfo);
             }
             else if (value.IsCommentThread)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CommentThreadNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CommentThreadNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CommentThreadNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CommentThread!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCommentThread(), typeInfo);
             }
             else if (value.IsCommentMention)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CommentMentionNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CommentMentionNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CommentMentionNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CommentMention!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCommentMention(), typeInfo);
             }
             else if (value.IsCommentReaction)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.CommentReactionNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.CommentReactionNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.CommentReactionNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CommentReaction!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCommentReaction(), typeInfo);
             }
             else if (value.IsListenStreakReminder)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ListenStreakReminderNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ListenStreakReminderNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ListenStreakReminderNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ListenStreakReminder!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickListenStreakReminder(), typeInfo);
             }
             else if (value.IsFanRemixContestStarted)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanRemixContestStartedNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanRemixContestStartedNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanRemixContestStartedNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanRemixContestStarted!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanRemixContestStarted(), typeInfo);
             }
             else if (value.IsFanRemixContestEnded)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanRemixContestEndedNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanRemixContestEndedNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanRemixContestEndedNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanRemixContestEnded!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanRemixContestEnded(), typeInfo);
             }
             else if (value.IsFanRemixContestEndingSoon)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanRemixContestEndingSoonNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanRemixContestEndingSoonNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanRemixContestEndingSoonNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanRemixContestEndingSoon!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanRemixContestEndingSoon(), typeInfo);
             }
             else if (value.IsArtistRemixContestEnded)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ArtistRemixContestEndedNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ArtistRemixContestEndedNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ArtistRemixContestEndedNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ArtistRemixContestEnded!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickArtistRemixContestEnded(), typeInfo);
             }
             else if (value.IsArtistRemixContestEndingSoon)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ArtistRemixContestEndingSoonNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ArtistRemixContestEndingSoonNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ArtistRemixContestEndingSoonNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ArtistRemixContestEndingSoon!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickArtistRemixContestEndingSoon(), typeInfo);
             }
             else if (value.IsArtistRemixContestSubmissions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.ArtistRemixContestSubmissionsNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.ArtistRemixContestSubmissionsNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.ArtistRemixContestSubmissionsNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ArtistRemixContestSubmissions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickArtistRemixContestSubmissions(), typeInfo);
             }
             else if (value.IsFanRemixContestWinnersSelected)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanRemixContestWinnersSelectedNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanRemixContestWinnersSelectedNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanRemixContestWinnersSelectedNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanRemixContestWinnersSelected!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanRemixContestWinnersSelected(), typeInfo);
             }
             else if (value.IsRemixContestUpdate)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.RemixContestUpdateNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.RemixContestUpdateNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.RemixContestUpdateNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RemixContestUpdate!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRemixContestUpdate(), typeInfo);
             }
             else if (value.IsFanRemixContestSubmission)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanRemixContestSubmissionNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanRemixContestSubmissionNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanRemixContestSubmissionNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanRemixContestSubmission!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanRemixContestSubmission(), typeInfo);
             }
             else if (value.IsFanClubTextPost)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.FanClubTextPostNotification), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.FanClubTextPostNotification?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.FanClubTextPostNotification).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FanClubTextPost!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFanClubTextPost(), typeInfo);
             }
         }
     }

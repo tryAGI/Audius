@@ -42,8 +42,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.Activity PickActivity() => IsActivity
-            ? Activity!
+        public global::Audius.Activity PickActivity() => Activity is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Activity' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
-        public global::Audius.TrackActivityVariant2 PickTrackActivityVariant2() => IsTrackActivityVariant2
-            ? TrackActivityVariant2!
+        public global::Audius.TrackActivityVariant2 PickTrackActivityVariant2() => TrackActivityVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TrackActivityVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity && activity != null)
+            if (Activity is { } __value0 && activity != null)
             {
-                return activity(Activity!);
+                return activity(__value0);
             }
-            else if (IsTrackActivityVariant2 && trackActivityVariant2 != null)
+            else if (TrackActivityVariant2 is { } __value1 && trackActivityVariant2 != null)
             {
-                return trackActivityVariant2(TrackActivityVariant2!);
+                return trackActivityVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity)
+            if (Activity is { } __value0)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value0);
             }
-            else if (IsTrackActivityVariant2)
+            else if (TrackActivityVariant2 is { } __value1)
             {
-                trackActivityVariant2?.Invoke(TrackActivityVariant2!);
+                trackActivityVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Audius
                 Validate();
             }
 
-            if (IsActivity)
+            if (Activity is { } __value0)
             {
-                activity?.Invoke(Activity!);
+                activity?.Invoke(__value0);
             }
-            else if (IsTrackActivityVariant2)
+            else if (TrackActivityVariant2 is { } __value1)
             {
-                trackActivityVariant2?.Invoke(TrackActivityVariant2!);
+                trackActivityVariant2?.Invoke(__value1);
             }
         }
 

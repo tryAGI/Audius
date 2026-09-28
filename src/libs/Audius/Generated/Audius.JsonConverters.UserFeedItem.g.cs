@@ -258,13 +258,13 @@ namespace Audius.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.TrackFeedItem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.TrackFeedItem?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.TrackFeedItem).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Track!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTrack(), typeInfo);
             }
             else if (value.IsPlaylist)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Audius.PlaylistFeedItem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Audius.PlaylistFeedItem?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Audius.PlaylistFeedItem).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Playlist!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPlaylist(), typeInfo);
             }
         }
     }
