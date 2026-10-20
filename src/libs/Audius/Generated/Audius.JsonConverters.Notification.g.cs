@@ -398,6 +398,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 1)
                 {
@@ -412,6 +416,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 2)
@@ -428,6 +436,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 3)
                 {
@@ -442,6 +454,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 4)
@@ -458,6 +474,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 5)
                 {
@@ -472,6 +492,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 6)
@@ -488,6 +512,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 7)
                 {
@@ -502,6 +530,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 8)
@@ -518,6 +550,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 9)
                 {
@@ -532,6 +568,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 10)
@@ -548,6 +588,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 11)
                 {
@@ -562,6 +606,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 12)
@@ -578,6 +626,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 13)
                 {
@@ -592,6 +644,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 14)
@@ -608,6 +664,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 15)
                 {
@@ -622,6 +682,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 16)
@@ -638,6 +702,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 17)
                 {
@@ -652,6 +720,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 18)
@@ -668,6 +740,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 19)
                 {
@@ -682,6 +758,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 20)
@@ -698,6 +778,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 21)
                 {
@@ -712,6 +796,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 22)
@@ -728,6 +816,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 23)
                 {
@@ -742,6 +834,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 24)
@@ -758,6 +854,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 25)
                 {
@@ -772,6 +872,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 26)
@@ -788,6 +892,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 27)
                 {
@@ -802,6 +910,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 28)
@@ -818,6 +930,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 29)
                 {
@@ -832,6 +948,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 30)
@@ -848,6 +968,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 31)
                 {
@@ -862,6 +986,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 32)
@@ -878,6 +1006,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 33)
                 {
@@ -892,6 +1024,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 34)
@@ -908,6 +1044,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 35)
                 {
@@ -922,6 +1062,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 36)
@@ -938,6 +1082,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 37)
                 {
@@ -952,6 +1100,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 38)
@@ -968,6 +1120,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 39)
                 {
@@ -982,6 +1138,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 40)
@@ -998,6 +1158,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 41)
                 {
@@ -1012,6 +1176,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 42)
@@ -1028,6 +1196,10 @@ namespace Audius.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 43)
                 {
@@ -1042,6 +1214,10 @@ namespace Audius.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -1061,6 +1237,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1077,6 +1257,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1095,6 +1279,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1111,6 +1299,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1129,6 +1321,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1145,6 +1341,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1163,6 +1363,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1179,6 +1383,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1197,6 +1405,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1213,6 +1425,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1231,6 +1447,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1247,6 +1467,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1265,6 +1489,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1281,6 +1509,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1299,6 +1531,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1315,6 +1551,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1333,6 +1573,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1349,6 +1593,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1367,6 +1615,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1383,6 +1635,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1401,6 +1657,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1417,6 +1677,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1435,6 +1699,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1451,6 +1719,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1469,6 +1741,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1485,6 +1761,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1503,6 +1783,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1519,6 +1803,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1537,6 +1825,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1553,6 +1845,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1571,6 +1867,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1587,6 +1887,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1605,6 +1909,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1621,6 +1929,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1639,6 +1951,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1655,6 +1971,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1673,6 +1993,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1689,6 +2013,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1707,6 +2035,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1723,6 +2055,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1741,6 +2077,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1757,6 +2097,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1775,6 +2119,10 @@ namespace Audius.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (follow == null && save == null && repost == null && repostOf == null && saveOfRepost == null && tastemaker == null && remix == null && cosign == null && create == null && sendTip == null && receiveTip == null && supporterDethroned == null && supporterRankUp1 == null && supporterRankUp2 == null && challengeReward == null && claimableReward == null && reaction == null && milestone == null && tierChange == null && trackAddedToPlaylist == null && trackAddedToPurchasedAlbum == null && usdcPurchaseSeller == null && usdcPurchaseBuyer == null && requestManager == null && approveManagerRequest == null && trending == null && trendingPlaylist == null && trendingUnderground == null && announcement == null && comment == null && commentThread == null && commentMention == null && commentReaction == null && listenStreakReminder == null && fanRemixContestStarted == null && fanRemixContestEnded == null && fanRemixContestEndingSoon == null && artistRemixContestEnded == null && artistRemixContestEndingSoon == null && artistRemixContestSubmissions == null && fanRemixContestWinnersSelected == null && remixContestUpdate == null && fanRemixContestSubmission == null && fanClubTextPost == null)
@@ -1791,6 +2139,10 @@ namespace Audius.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
