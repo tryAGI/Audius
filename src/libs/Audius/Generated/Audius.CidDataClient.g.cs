@@ -37,14 +37,14 @@ namespace Audius
 
         internal global::Audius.AudiusClient.AutoSDKOAuth2Coordinator AutoSDKOAuth2State { get; set; } = new global::Audius.AudiusClient.AutoSDKOAuth2Coordinator();
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Audius.CidDataSourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider.Value;
+            get => JsonSerializerContextProvider?.Value ?? global::Audius.CidDataSourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 
