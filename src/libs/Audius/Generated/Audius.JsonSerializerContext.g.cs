@@ -13,6 +13,7 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateAccessKeyResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -509,7 +510,6 @@ namespace Audius
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.CommentNotificationAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CommentNotificationAction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.ClaimableRewardNotificationAction>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimableRewardNotificationAction))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -521,6 +521,7 @@ namespace Audius
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.ClaimableRewardNotificationAction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.CreateNotificationAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Audius.CreateNotificationAction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Audius.MilestoneNotificationAction>))]
