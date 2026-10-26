@@ -12,6 +12,11 @@ namespace Audius
         /// <summary>
         ///
         /// </summary>
+        public global::Audius.UserFeedItemDiscriminatorType? Type { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Audius.TrackFeedItem? Track { get; init; }
 #else
@@ -132,10 +137,13 @@ namespace Audius
         ///
         /// </summary>
         public UserFeedItem(
+            global::Audius.UserFeedItemDiscriminatorType? type,
             global::Audius.TrackFeedItem? track,
             global::Audius.PlaylistFeedItem? playlist
             )
         {
+            Type = type;
+
             Track = track;
             Playlist = playlist;
         }
